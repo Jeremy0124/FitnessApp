@@ -13,33 +13,29 @@ struct FirstLaunchView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Image("Bimg")
+                Image("photo3")
                     .resizable()
-                    .scaledToFit()
-                    .clipped()
+                    .ignoresSafeArea(.all)
                 VStack {
+                    Spacer()
+                    Spacer()
                     Section {
                         Group {
                             TextField("Email Address", text: $email)
-                                .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .autocorrectionDisabled(true)
                                 .autocapitalization(.none)
-                                .background(Color(.secondarySystemBackground))
-                                .cornerRadius(15)
-                                .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.pink))
-                                .padding([.horizontal], 5)
-                                .padding([.vertical], 15)
+                                .foregroundColor(Color.white)
+                                .background(LinearGradient(colors: [.pink, .pink.opacity(0.55)], startPoint: .topLeading, endPoint: .bottomTrailing))
+                                .cornerRadius(10)
+                                
                             
                             
                             SecureField("Password", text: $password)
-                                .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .autocorrectionDisabled(true)
                                 .autocapitalization(.none)
-                                .background(Color(.secondarySystemBackground))
-                                .cornerRadius(15)
-                                .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.pink))
-                                .padding([.horizontal], 5)
-                                .padding([.vertical], 2)
+                                .foregroundColor(Color.white)
+                                .background(LinearGradient(colors: [.pink, .pink.opacity(0.55)], startPoint: .topLeading, endPoint: .bottomTrailing))
+                                .cornerRadius(10)
                         }
                         .font(Font.system(size: 30, design: .default))
                         
@@ -50,9 +46,12 @@ struct FirstLaunchView: View {
                             .cornerRadius(10)
                             .padding()
                     }
+                   Spacer()
                 }
                 .padding()
+                
             }
+            
         }
     }
 }
