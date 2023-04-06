@@ -14,20 +14,22 @@ struct HomePageView: View {
                 VStack{
                     Spacer()
                     NavigationLink(destination: warmUpPageView()) {
-                        Image("photo5")
+                        Image("warm-ups")
                             .resizable()
                             .frame(height: 300)
                             .cornerRadius(50)
                             .clipped()
                             .shadow(radius: 20)
-                            .padding(.top, -120)
-
+                            .padding(.top, -230)
+                            .aspectRatio( contentMode: .fit)
                     }
+                    Spacer()
+                    Spacer()
                     
                     ScrollView(.horizontal, showsIndicators: true, content: {
                         ZStack {
                             HStack {
-                                Image("photo4")
+                                Text("Hello")
                                     
                             }
                         }
@@ -35,8 +37,8 @@ struct HomePageView: View {
                 }
                 .padding()
             }
-            
         }
+            .navigationTitle("Home Page")
         
     }
     

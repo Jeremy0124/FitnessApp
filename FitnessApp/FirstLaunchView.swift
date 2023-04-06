@@ -22,6 +22,7 @@ struct FirstLaunchView: View {
                     Section {
                         Group {
                             TextField("Email Address", text: $email)
+                                .padding(8)
                                 .autocorrectionDisabled(true)
                                 .autocapitalization(.none)
                                 .foregroundColor(Color.white)
@@ -31,13 +32,14 @@ struct FirstLaunchView: View {
                             
                             
                             SecureField("Password", text: $password)
+                                .padding(8)
                                 .autocorrectionDisabled(true)
                                 .autocapitalization(.none)
                                 .foregroundColor(Color.white)
                                 .background(LinearGradient(colors: [.pink, .pink.opacity(0.55)], startPoint: .topLeading, endPoint: .bottomTrailing))
                                 .cornerRadius(10)
                         }
-                        .font(Font.system(size: 30, design: .default))
+                        .font(Font.system(size: 20, design: .default))
                         
                         NavigationLink("LOG IN", destination: HomePageView())
                             .frame(width: 140, height: 50)
