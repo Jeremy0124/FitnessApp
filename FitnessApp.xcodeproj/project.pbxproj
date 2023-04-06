@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DEADE55829DE63C200AFA659 /* warmUpPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADE55729DE63C200AFA659 /* warmUpPageView.swift */; };
 		DEDDD2E929D2B74200BBD523 /* FitnessAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDDD2E829D2B74200BBD523 /* FitnessAppApp.swift */; };
 		DEDDD2EB29D2B74200BBD523 /* FirstLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDDD2EA29D2B74200BBD523 /* FirstLaunchView.swift */; };
 		DEDDD2ED29D2B74300BBD523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDDD2EC29D2B74300BBD523 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DEADE55729DE63C200AFA659 /* warmUpPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = warmUpPageView.swift; sourceTree = "<group>"; };
 		DEDDD2E529D2B74200BBD523 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDDD2E829D2B74200BBD523 /* FitnessAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessAppApp.swift; sourceTree = "<group>"; };
 		DEDDD2EA29D2B74200BBD523 /* FirstLaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunchView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				DEDDD2E829D2B74200BBD523 /* FitnessAppApp.swift */,
 				DEDDD2EA29D2B74200BBD523 /* FirstLaunchView.swift */,
 				DEDDD2F629D2B9FB00BBD523 /* HomePageView.swift */,
+				DEADE55729DE63C200AFA659 /* warmUpPageView.swift */,
 				DEDDD2EC29D2B74300BBD523 /* Assets.xcassets */,
 				DEDDD2EE29D2B74300BBD523 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				DEDDD2EB29D2B74200BBD523 /* FirstLaunchView.swift in Sources */,
 				DEDDD2F729D2B9FB00BBD523 /* HomePageView.swift in Sources */,
 				DEDDD2E929D2B74200BBD523 /* FitnessAppApp.swift in Sources */,
+				DEADE55829DE63C200AFA659 /* warmUpPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

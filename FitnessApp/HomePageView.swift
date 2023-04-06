@@ -9,8 +9,37 @@ import SwiftUI
 
 struct HomePageView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ZStack{
+                VStack{
+                    Spacer()
+                    NavigationLink(destination: warmUpPageView()) {
+                        Image("photo5")
+                            .resizable()
+                            .frame(height: 300)
+                            .cornerRadius(50)
+                            .clipped()
+                            .shadow(radius: 20)
+                            .padding(.top, -120)
+
+                    }
+                    
+                    ScrollView(.horizontal, showsIndicators: true, content: {
+                        ZStack {
+                            HStack {
+                                Image("photo4")
+                                    
+                            }
+                        }
+                    })
+                }
+                .padding()
+            }
+            
+        }
+        
     }
+    
 }
 
 struct HomePageView_Previews: PreviewProvider {

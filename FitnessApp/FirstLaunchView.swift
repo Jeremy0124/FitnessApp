@@ -13,7 +13,7 @@ struct FirstLaunchView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Image("photo3")
+                Image("photo1")
                     .resizable()
                     .ignoresSafeArea(.all)
                 VStack {
@@ -47,6 +47,7 @@ struct FirstLaunchView: View {
                             .padding()
                     }
                    Spacer()
+                    
                 }
                 .padding()
                 
