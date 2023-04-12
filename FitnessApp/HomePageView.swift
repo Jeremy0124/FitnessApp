@@ -29,7 +29,6 @@ struct HomePageView: View {
                     ScrollView(.horizontal, showsIndicators: true, content: {
                         ZStack {
                             HStack {
-                                Text("Hello")
                                     
                             }
                         }
