@@ -13,6 +13,11 @@
 		DEDDD2ED29D2B74300BBD523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDDD2EC29D2B74300BBD523 /* Assets.xcassets */; };
 		DEDDD2F029D2B74300BBD523 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDDD2EF29D2B74300BBD523 /* Preview Assets.xcassets */; };
 		DEDDD2F729D2B9FB00BBD523 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDDD2F629D2B9FB00BBD523 /* HomePageView.swift */; };
+		DEE3D41A2A0B524400C8B273 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DEE3D4192A0B524400C8B273 /* FirebaseAnalytics */; };
+		DEE3D41C2A0B524400C8B273 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DEE3D41B2A0B524400C8B273 /* FirebaseAuth */; };
+		DEE3D41E2A0B524400C8B273 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DEE3D41D2A0B524400C8B273 /* FirebaseFirestore */; };
+		DEE3D4232A0B566C00C8B273 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DEE3D4222A0B566C00C8B273 /* FirebaseAnalyticsSwift */; };
+		DEE3D42C2A0B5B0000C8B273 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEE3D42B2A0B5B0000C8B273 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,7 @@
 		DEDDD2EC29D2B74300BBD523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEDDD2EF29D2B74300BBD523 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DEDDD2F629D2B9FB00BBD523 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		DEE3D42B2A0B5B0000C8B273 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +36,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE3D4232A0B566C00C8B273 /* FirebaseAnalyticsSwift in Frameworks */,
+				DEE3D41A2A0B524400C8B273 /* FirebaseAnalytics in Frameworks */,
+				DEE3D41C2A0B524400C8B273 /* FirebaseAuth in Frameworks */,
+				DEE3D41E2A0B524400C8B273 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +51,7 @@
 			children = (
 				DEDDD2E729D2B74200BBD523 /* FitnessApp */,
 				DEDDD2E629D2B74200BBD523 /* Products */,
+				DEE3D4212A0B566C00C8B273 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +70,7 @@
 				DEDDD2EA29D2B74200BBD523 /* FirstLaunchView.swift */,
 				DEDDD2F629D2B9FB00BBD523 /* HomePageView.swift */,
 				DEADE55729DE63C200AFA659 /* warmUpPageView.swift */,
+				DEE3D42B2A0B5B0000C8B273 /* GoogleService-Info.plist */,
 				DEDDD2EC29D2B74300BBD523 /* Assets.xcassets */,
 				DEDDD2EE29D2B74300BBD523 /* Preview Content */,
 			);
@@ -71,6 +83,13 @@
 				DEDDD2EF29D2B74300BBD523 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DEE3D4212A0B566C00C8B273 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +108,12 @@
 			dependencies = (
 			);
 			name = FitnessApp;
+			packageProductDependencies = (
+				DEE3D4192A0B524400C8B273 /* FirebaseAnalytics */,
+				DEE3D41B2A0B524400C8B273 /* FirebaseAuth */,
+				DEE3D41D2A0B524400C8B273 /* FirebaseFirestore */,
+				DEE3D4222A0B566C00C8B273 /* FirebaseAnalyticsSwift */,
+			);
 			productName = FitnessApp;
 			productReference = DEDDD2E529D2B74200BBD523 /* FitnessApp.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +142,9 @@
 				Base,
 			);
 			mainGroup = DEDDD2DC29D2B74100BBD523;
+			packageReferences = (
+				DEE3D4182A0B524300C8B273 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = DEDDD2E629D2B74200BBD523 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,6 +161,7 @@
 			files = (
 				DEDDD2F029D2B74300BBD523 /* Preview Assets.xcassets in Resources */,
 				DEDDD2ED29D2B74300BBD523 /* Assets.xcassets in Resources */,
+				DEE3D42C2A0B5B0000C8B273 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +376,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DEE3D4182A0B524300C8B273 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DEE3D4192A0B524400C8B273 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEE3D4182A0B524300C8B273 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		DEE3D41B2A0B524400C8B273 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEE3D4182A0B524300C8B273 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		DEE3D41D2A0B524400C8B273 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEE3D4182A0B524300C8B273 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		DEE3D4222A0B566C00C8B273 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEE3D4182A0B524300C8B273 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEDDD2DD29D2B74100BBD523 /* Project object */;
 }

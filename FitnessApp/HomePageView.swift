@@ -23,8 +23,37 @@ struct HomePageView: View {
                             .padding(.top, -230)
                             .aspectRatio( contentMode: .fit)
                     }
+                    
+                    HStack {
+                        Button {
+                            print("Test")
+                        } label: {
+                            Image(systemName: "plus.square.fill")
+                                .foregroundColor(Color.green)
+                                .font(.system(size: 50))
+                                .frame(height: 40)
+                                .frame(width: 40)
+                        }
+                        .padding()
+                        
+                        Button {
+                            print("Test")
+                        } label: {
+                            Image(systemName: "minus.square.fill")
+                                .foregroundColor(Color.red)
+                                .font(.system(size: 50))
+                                .frame(height: 40)
+                                .frame(width: 40)
+                        }
+                        .padding()
+                        Spacer()
+                    }
+                    
+                    
+                    
                     Spacer()
                     Spacer()
+
                     
                     ScrollView(.horizontal, showsIndicators: true, content: {
                         ZStack {
