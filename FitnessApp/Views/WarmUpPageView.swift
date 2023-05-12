@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct warmUpPageView: View {
+struct WarmUpPageView: View {
     var body: some View {
         Text("Warm up Page View")
     }
@@ -15,6 +15,6 @@ struct warmUpPageView: View {
 
 struct warmUpPageView_Previews: PreviewProvider {
     static var previews: some View {
-        warmUpPageView()
+        WarmUpPageView()
     }
 }

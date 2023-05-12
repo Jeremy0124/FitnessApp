@@ -28,8 +28,6 @@ struct FirstLaunchView: View {
                                 .foregroundColor(Color.white)
                                 .background(LinearGradient(colors: [.pink, .pink.opacity(0.55)], startPoint: .topLeading, endPoint: .bottomTrailing))
                                 .cornerRadius(10)
-                                
-                            
                             
                             SecureField("Password", text: $password)
                                 .padding(8)
@@ -41,20 +39,28 @@ struct FirstLaunchView: View {
                         }
                         .font(Font.system(size: 20, design: .default))
                         
-                        NavigationLink("LOG IN", destination: HomePageView())
-                            .frame(width: 140, height: 50)
-                            .foregroundColor(Color.white)
-                            .background(Color.pink)
-                            .cornerRadius(10)
-                            .padding()
+                        HStack {
+                            NavigationLink("Create Account", destination: CreateAccountView())
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 55)
+                                .foregroundColor(Color.white)
+                                .background(Color.pink)
+                                .cornerRadius(10)
+                            
+                            NavigationLink("LOG IN", destination: HomePageView())
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 55)
+                                .foregroundColor(Color.white)
+                                .background(Color.pink)
+                                .cornerRadius(10)
+                        }
+                        .padding()
                     }
-                   Spacer()
+                    Spacer()
                     
                 }
                 .padding()
-                
             }
-            
         }
     }
 }
